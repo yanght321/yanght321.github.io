@@ -246,6 +246,32 @@ h2 {
   white-space: pre;
 }
 
+.service-list {
+  display: grid;
+  gap: 16px;
+}
+
+.service-item {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 24px;
+  align-items: baseline;
+}
+
+.service-item h3 {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.service-item p {
+  margin: 0;
+  color: #333b45;
+  font-size: 15px;
+}
+
 .footer {
   padding: 18px 0 0;
   color: var(--muted);
@@ -303,12 +329,17 @@ h2 {
   }
 
   .news-list li,
+  .service-item,
   .publication {
     grid-template-columns: 1fr;
   }
 
   .news-list li {
     gap: 1px;
+  }
+
+  .service-item {
+    gap: 4px;
   }
 
   .publication {
